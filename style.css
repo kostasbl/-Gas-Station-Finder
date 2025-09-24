@@ -1,0 +1,647 @@
+#header{
+    text-align: center;
+    height: 150px;
+/*    background-color: rgb(4, 30, 44);  */
+    border: #A00;  
+}
+footer{
+    clear: both;
+    height: 30px;
+}
+#mainimgdiv{
+    text-align: center;
+    height: fit-content;
+}
+#mainimgdiv img{
+    width: 100%;
+    height: 550px;
+    
+}
+#main {
+    position: relative;
+}
+#imgtext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: rgb(208, 117, 37);
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    min-height: 510px;
+    height: fit-content;
+    border-top-right-radius: 100px; /* Make the top-right corner circular */
+    border-bottom-right-radius: 100px;
+    width: 45%;
+    min-width: 500px;
+    margin: 15px 0 15px 0; /* Center the div horizontally */
+}
+#signinform form{
+    margin-top: 20px;
+}
+#signinform form input,option,button{
+    margin-top: 20px;
+}
+
+#imgtext h3{
+    color: rgb(254, 163, 242);
+    margin: 60px;
+    font-size: larger;
+    text-align: left;
+}
+#imgtext p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 30px;
+}
+#imgtext button{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+button{
+    background-color: rgb(98, 160, 187);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+} 
+li>button{
+    cursor: pointer;
+    font-size: 1em;
+    color: black !important;
+    padding-bottom: 47  px;
+    margin-top: 30px ;    
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+#try{
+    background-color: salmon;
+    position: absolute;
+    height: 100px;
+    z-index: 10;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#mainmap{
+    position: relative;
+}
+
+
+#menu{
+    height: 52px;
+    background-color:rgb(182, 228, 232);
+    justify-content: center;
+    display: grid;
+}
+#menu >ul{
+    min-width: 600px;
+    min-width: 900px;
+    float: left; 
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    padding-top: 0;
+    height: 42px;
+    list-style-type: none;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 0;
+    height: 30px;
+    font-size: 30px;
+}
+ul li a , ul li button{
+    display: block;
+    color: black;
+    margin-bottom: 0px;
+    margin: 0;
+    height: 44px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 10px;
+    border-radius: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+ul li a:hover, ul li button:hover{
+    font-weight: bold;
+    background-color:rgb(233, 241, 217);
+}
+ul li ul.dropdownlist{
+    display: none;
+    position: absolute;  
+    margin-left: 0px;
+    background-color:rgb(182, 228, 232);
+    padding-left: 0;
+    padding-right: 0.5em;
+    z-index: 20;
+}
+ul li ul.dropdownlist li{
+    display: block;
+    margin-bottom: 6px;
+}
+
+ul li:hover ul.dropdownlist{
+    display: block;
+}
+    
+ul li ul.dropdownlist li a{
+    font-size: 1em;
+    text-align: left;
+    margin-bottom:2px;
+    padding-left: 10px;
+    padding-right: 1.6em;
+    margin-top: 3px;
+    text-align: center;
+}
+#signinform{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(4, 30, 44);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+#ellbutton{
+    margin-left: 350px !important;
+}
+#showMyOrders{
+    
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 400px; /* Adjust the width of the sidebar */
+        height: calc(100% - 50px);
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 20px; /* Add padding inside the sidebar */
+        z-index: 1000; /* Ensure it appears above other elements */
+        display: none; /* Initially hidden, shown when toggled */
+        box-sizing: border-box; /* Include padding in height calculation */
+
+}
+#showMyOrders h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+
+#showMyOrders .order {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#showMyOrders .order p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#showMyOrders .order button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#showMyOrders .order button:hover {
+    background-color: #c9302c;
+}
+#loginform {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#loginform label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+#loginform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#loginform button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#loginform button:hover {
+    background-color: #0056b3;
+}
+
+#loginform button[type="button"] {
+    background-color: #dc3545;
+}
+
+#loginform button[type="button"]:hover {
+    background-color: #c82333;
+}
+#markerdetails {
+    position: absolute;
+    top: 50px; /* Adjust to leave space for any header */
+    left: 0;
+    width: 400px; /* Adjust the width of the sidebar */
+    height: calc(100% - 50px); /* Subtract the height of the header/footer */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding inside the sidebar */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+#markerdetails h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+
+#markerdetails .price-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#markerdetails .price-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#markerdetails .price-details button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#markerdetails .price-details button:hover {
+    background-color: #0056b3;
+}
+#backbutton {
+    position: absolute; /* Position it at the top-right of the parent container */
+    top: 10px; /* Add some spacing from the top */
+    right: 10px; /* Add some spacing from the right */
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    border: 1px solid #ccc; /* Add a subtle border */
+    padding: 10px 15px; /* Add padding for better clickability */
+    font-size: 18px; /* Adjust font size for the emoji */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the emoji inside the button */
+    line-height: 1; /* Adjust line height for proper alignment */
+    z-index: 1001; /* Ensure it appears above other elements */
+}
+
+#backbutton:hover {
+    background-color: #e2e6ea; /* Slightly darker background on hover */
+    border-color: #adb5bd; /* Darker border on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+#try {
+    background-color: #ffffff; /* White background for a clean look */
+    position: absolute;
+    height: auto; /* Adjust height based on content */
+    width: 400px; /* Slightly wider for better readability */
+    z-index: 10;
+    bottom: 5%; /* Position near the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Center horizontally */
+    padding: 20px; /* Add padding inside the div */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow for a card effect */
+    text-align: center; /* Center-align text */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+#try:hover {
+    transform: translate(-50%, -5px); /* Slight lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#try h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for the heading */
+    font-size: 20px; /* Larger font size for the heading */
+    font-weight: bold;
+}
+
+#try p {
+    margin: 10px 0;
+    font-size: 15px; /* Slightly larger font size for better readability */
+    color: #555; /* Slightly darker text color */
+    line-height: 1.5; /* Improve readability with line height */
+}
+
+#try .highlight {
+    color: #28a745; /* Green color for highlighted text */
+    font-weight: bold;
+}
+
+#header {
+    background-color:rgb(182, 228, 232);
+    color: rgb(0, 0, 0); /* White text */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font size for the main header */
+    font-weight: bold;
+}
+
+.header-content .sub-header {
+    margin: 10px 0 0;
+    font-size: 1.2em; /* Slightly smaller font size for the sub-header */
+    font-weight: 300;
+}
+
+#userdiv {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo and message */
+}
+
+#logo {
+    font-size: 2em; /* Larger size for the user icon */
+    margin: 0;
+}
+
+#msg {
+    font-size: 1em;
+    color: black
+}
+.price-details {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Add padding inside the div */
+    margin-top: 20px; /* Add spacing between price details */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Clean font style */
+    color: #333; /* Text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.price-details:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.price-details p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+    font-size: 14px; /* Adjust font size for readability */
+    color: #555; /* Slightly darker text color */
+}
+
+.price-details input[type="number"] {
+    width: 100%; /* Full width for the input field */
+    padding: 10px; /* Add padding inside the input */
+    margin-top: 10px; /* Add spacing above the input */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.price-details button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding inside the button */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Add spacing above the button */
+    width: 100%; /* Full width button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.price-details button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for the page */
+    color: #333; /* Default text color */
+}
+/**/
+
+h3, h4 , h5 ,h6{
+    color: #007bff; /* Blue color for headings */
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555; /* Slightly darker text color */
+}
+
+/* Main Container */
+#mainop {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(229, 226, 223);
+}
+
+/* Gas Stations Section */
+#mystations {
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add spacing below the container */
+}
+
+#mystations h3 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+/* Individual Station Card Styling */
+.station {
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    padding: 15px; /* Add padding inside the station card */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Add spacing between station cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.station:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.station p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+    font-size: 14px; /* Adjust font size for readability */
+    color: #555; /* Slightly darker text color */
+}
+
+.station p strong {
+    color: #333; /* Darker color for labels */
+}
+
+/* Horizontal Rule Styling */
+#mystations hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Subtle horizontal line */
+    margin: 15px 0; /* Add spacing above and below the line */
+}
+
+/* Fuel Prices Section */
+#stationprices {
+    text-align: center;
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add spacing below the container */
+}
+
+#stationprices h4 {
+    font-size: 20px; /* Larger font size for the heading */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+/* Fuel Price List Styling */
+#stationprices ol {
+    padding-left: 20px; /* Indent the list */
+    text-align: center;
+    list-style-type: none; /* Remove default list styling */
+}
+
+#stationprices li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 14px; /* Adjust font size for readability */
+    width: 100%; /* Ensure the list items take up the full width */
+    text-align: center;
+}
+
+#stationprices input[type="text"], #stationprices input[type="number"] {
+    width: 100px; /* Fixed width for input fields */
+    padding: 5px; /* Add padding inside the input */
+    font-size: 14px; /* Adjust font size */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 10px; /* Add spacing between label and input */
+}
+
+#stationprices button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding inside the button */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Add spacing above the button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+#stationprices button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+#mainop h3{
+    margin: 50px;
+}
+/* Footer styles */
+footer {
+    background: #222;
+    color: #eee;
+    padding: 30px 0 15px 0;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
